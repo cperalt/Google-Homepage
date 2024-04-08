@@ -1,0 +1,230 @@
+:root {
+    --backgroundColor: #fefeff;
+    --textColor: #1f1f1f;
+    --footerColor: #f3f3f2;
+    --buttonBackgroundColor: #f8f9fa;
+    --buttonTextColor: #3c4043;
+    --settingsBackgroundColor: #fff;
+    --settingsBoxShadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+    --signInBackgroundColor: #1a73e8;
+    --signInTextColor: #FFFFFF;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--backgroundColor);
+}
+nav {
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+nav > ul {
+    background: var(--backgroundColor);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#google {
+    background-color: var(--backgroundColor);
+    width: 450px;
+    height: 45px;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: medium;
+    font-family: Roboto, arial, sans-serif;
+    line-height: 22px;
+    outline: none;
+    border: none;
+    color: var(--textColor);
+}
+
+#google-search, #lucky-button {
+    background-color: var(--buttonBackgroundColor);
+    border: 1px solid var(--buttonBackgroundColor);
+    border-radius: 4px;
+    color: var(--buttonTextColor);
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 49px;
+    bottom: 0;
+    justify-content: space-evenly;
+    background-color: var(--footerColor);
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 0;
+    padding-left: 0;
+}
+.main-links {
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+}
+
+.other-links {
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+.foot-links-left {
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.foot-links-middle {
+    align-items: center;
+    margin-right: 20rem;
+    padding-left: 0;
+}
+
+.foot-links-right {
+    align-items: center;
+}
+
+main {
+    background-color: var(--backgroundColor);
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > section {
+    margin: .9rem;
+}
+
+#google-logo {
+    width: 272px;
+    height: 92px;
+}
+
+#sign-in {
+    font-size: 14px;
+    font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--signInTextColor);
+    background-color: var(--signInBackgroundColor);
+    margin: 0px 8px;
+    padding: 9px 23px;
+    border: 1px solid transparent;
+    border-radius: 6%;
+}
+
+#middle-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    padding: 5px 8px 0 14px;
+    height: 46px;
+}
+
+#middle-section:hover {
+    box-shadow: 0px 4px 6px rgba(32,33,36,0.28);
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#mic-icon {
+    width: 24px;
+    padding: 0 8px;
+    line-height: 44px;
+}
+
+#camera-icon {
+    width: 24px;
+    line-height: 44px;
+    padding: 0 8px;
+}
+
+#nav-links-left {
+    padding-left: 0;
+}
+
+#leaf {
+    height: 14px;
+    margin-right: 6px;
+}
+
+#settings {
+    color: var(--textColor);
+    font-size: 14px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+#settings:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#settings-menu {
+    display: none;
+    width: 155px;
+    height: 238px;
+    position: fixed;
+    top: auto;
+    bottom: 39px;
+    right: 20px;
+    border-radius: 8px;
+    box-shadow: var(--settingsBoxShadow);
+    background-color: var(--settingsBackgroundColor);
+    padding-left: 15px;
+}
+
+#settings-menu > li {
+    padding: 5px 0;
+}
+
+#settings-menu > li > a {
+    text-decoration: inherit;
+    color: var(--textColor);
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+
+}
+
+#settings > li:hover {
+    background-color: gray;
+}
